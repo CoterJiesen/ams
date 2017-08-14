@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "static DataModel.checkDevice(strSns : String, username : String, completionHandler : (CuValueResponse&lt;checkDeviceInfo&gt;) -&gt; ()) -&gt; ():DataModel.swift">
+      </ContextState>
+      <ContextState
+         contextName = "static DataModel.(checkDevice(strSns : String, username : String, completionHandler : (CuValueResponse&lt;checkDeviceInfo&gt;) -&gt; ()) -&gt; ()).(closure #1):DataModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mjson[&quot;allNum&quot;].number">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginViewController.(loginClick() -&gt; ()).(closure #1).(closure #1):LoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "CuUser.sharedInstance.user">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static DataModel.(getClassMonInfo(username : String, completionHandler : (CuValueResponse&lt;DataModel&gt;) -&gt; ()) -&gt; ()).(closure #1):DataModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "subjson[&quot;staffid&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "subjson[&quot;staffname&quot;].string">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "specialized TabConsumingDetailViewController.(getMangerAllocHistory() -&gt; ()).(closure #1):TabConsumingDetailViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "info">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static DataModel.(alloctionDevice(staffID : String, strSns : String, completionHandler : (CuValueResponse&lt;allocStatus&gt;) -&gt; ()) -&gt; ()).(closure #1):DataModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mjson[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "specialized LoginViewController.(loginClick() -&gt; ()).(closure #1):LoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "CuUser.sharedInstance.user">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static UserModel.(getUserInfoByUsername(String, completionHandler : (CuValueResponse&lt;UserInfo&gt;) -&gt; ()) -&gt; ()).(closure #1):UserModel.swift">
+      </ContextState>
+      <ContextState
+         contextName = "static UserModel.getUserInfoByUsername(String, completionHandler : (CuValueResponse&lt;UserInfo&gt;) -&gt; ()) -&gt; ():UserModel.swift">
+      </ContextState>
+      <ContextState
+         contextName = "static DataModel.(alloctionDevice(staffID : String, strSns : String, username : String, completionHandler : (CuValueResponse&lt;[retAllocDeviceStatus]&gt;) -&gt; ()) -&gt; ()).(closure #1):DataModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mjson[&quot;devsno&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "JSON(json)[1]">
+            </PersistentString>
+            <PersistentString
+               value = "subjson[&quot;devsno&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "subjson[&quot;ret&quot;].string">
+            </PersistentString>
+            <PersistentString
+               value = "JSON(json)">
+            </PersistentString>
+            <PersistentString
+               value = "subjson[&quot;reason&quot;].string">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "request(URLConvertible, method : HTTPMethod, parameters : [String : Any]?, encoding : ParameterEncoding, headers : [String : String]?) -&gt; DataRequest:Alamofire.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

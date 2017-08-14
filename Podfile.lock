@@ -1,0 +1,75 @@
+PODS:
+  - Alamofire (4.4.0)
+  - AlamofireObjectMapper (4.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 2.0)
+  - CYLTabBarController (1.10.0)
+  - DrawerController (3.1.0):
+    - DrawerController/Core (= 3.1.0)
+    - DrawerController/DrawerVisualStates (= 3.1.0)
+  - DrawerController/Core (3.1.0)
+  - DrawerController/DrawerVisualStates (3.1.0):
+    - DrawerController/Core
+  - FXBlurView (1.6.4)
+  - Ji (2.0.1):
+    - Ji/Ji (= 2.0.1)
+  - Ji/Ji (2.0.1):
+    - Ji/Ji-libxml
+  - Ji/Ji-libxml (2.0.1)
+  - KeychainSwift (8.0.2)
+  - Kingfisher (3.6.2)
+  - KVOController (1.2.0)
+  - LLCycleScrollView (1.3.0):
+    - Kingfisher
+  - MJRefresh (3.1.12)
+  - ObjectMapper (2.2.5)
+  - PagingMenuController (2.2.0)
+  - PieCharts (0.0.5)
+  - SnapKit (3.2.0)
+  - SVProgressHUD (2.1.2)
+  - SwiftyJSON (3.1.4)
+  - TKSubmitTransitionSwift3 (0.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4.0)
+  - AlamofireObjectMapper (~> 4.1.0)
+  - CYLTabBarController
+  - DrawerController (~> 3.1.0)
+  - FXBlurView (~> 1.6.4)
+  - Ji (~> 2.0.1)
+  - KeychainSwift (~> 8.0.2)
+  - Kingfisher (~> 3.6.2)
+  - KVOController (~> 1.2.0)
+  - LLCycleScrollView
+  - MJRefresh (~> 3.1.12)
+  - ObjectMapper (~> 2.2.5)
+  - PagingMenuController
+  - PieCharts
+  - SnapKit (~> 3.2.0)
+  - SVProgressHUD (~> 2.1.2)
+  - SwiftyJSON
+  - TKSubmitTransitionSwift3
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
+  CYLTabBarController: 2de9a4c26f50d33574398becf8e7b0aaed794240
+  DrawerController: 89efc782dd732c0ec7891910a6bcca01433fad32
+  FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
+  Ji: 6bb602a28dd08b804158f64990e6051ed5de0110
+  KeychainSwift: 213db04dfe7244988e61f77c72a2afb2f775954a
+  Kingfisher: 2c94e72c6830622c71d06adf4ea024c37d316830
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  LLCycleScrollView: 060b1b98b4ed284cc6ff5c5cca18a0d8542e94ae
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  ObjectMapper: fb30f71e08470d1e5a20b199fafe1246281db898
+  PagingMenuController: 6176618987bb170096664f2da097313e45ed9c31
+  PieCharts: a0fb4784a3460088c8ba7dfb00b89784ddaa7e70
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  TKSubmitTransitionSwift3: fadd76eefa015542d0fe6d85424a43dd6f3354d2
+
+PODFILE CHECKSUM: 78523fc455ed56a88b02e857211edd50b0af13e8
+
+COCOAPODS: 1.2.1

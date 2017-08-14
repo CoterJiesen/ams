@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "static DataModel.(alloctionDevice(username : String, sns : [String], completionHandler : (CuValueResponse&lt;allocStatus&gt;) -&gt; ()) -&gt; ()).(closure #1):DataModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mjson[&quot;fail&quot;][0].string">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.tableView(UITableView, didSelectRowAt : IndexPath) -&gt; ():HomeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LLCycleScrollView.scollToIndex(targetIndex : Int) -&gt; ():LLCycleScrollView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "totalItemsCount">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LLCycleScrollView.collectionView(UICollectionView, numberOfItemsInSection : Int) -&gt; Int:LLCycleScrollView.swift">
+      </ContextState>
+      <ContextState
+         contextName = "PersonInfoListView.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:MenuPersonInfoViewCell.swift">
+      </ContextState>
+      <ContextState
+         contextName = "specialized ConsumingDeviceController.(getMangerAndDevice() -&gt; ()).(closure #1):ConsumingDeviceController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "static DataModel.(getMangerList(classMonitor : String, completionHandler : (CuValueResponse&lt;[String]&gt;) -&gt; ()) -&gt; ()).(closure #1):DataModel.swift">
+      </ContextState>
+      <ContextState
+         contextName = "PersonInfoViewController.(viewWillAppear(Bool) -&gt; ()).(closure #1):PersonInfoViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "subjson">
+            </PersistentString>
+            <PersistentString
+               value = "mjson[&quot;asset&quot;][0][&quot;devsno&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "asset[0].index(forKey: &quot;assetid&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "mjson[&quot;staffInfos&quot;][0][&quot;staffname&quot;].string">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static DataModel.(getClassMonInfo(username : String, completionHandler : (CuValueResponse&lt;DataModel&gt;) -&gt; ()) -&gt; ()).(closure #1):DataModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "deviceinfo">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "specialized ConsumingDeviceController.passBarcodeValue(title : String, message : String) -&gt; ():ConsumingDeviceController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "index">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

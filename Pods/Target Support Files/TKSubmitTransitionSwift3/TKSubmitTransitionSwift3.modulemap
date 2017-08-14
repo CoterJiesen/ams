@@ -1,0 +1,6 @@
+framework module TKSubmitTransitionSwift3 {
+  umbrella header "TKSubmitTransitionSwift3-umbrella.h"
+
+  export *
+  module * { export * }
+}
