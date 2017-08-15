@@ -639,5 +639,17 @@ class DataModel {
             }
         }
     }
-
+    class func getVersionFromServer(completionHandler:
+        @escaping (CuValueResponse<String>)->Void)->Void{
+        Alamofire.request("https://git.oschina.net/coterjiesen/ios/raw/master/manifest.plist", method: .get, headers: MOBILE_CLIENT_HEADERS).responsePropertyList{ response in
+            switch response.result{
+            case.success(let plist):
+                let meda = ((((plist as! NSDictionary)["items"]  as! NSArray)[0]) as! NSDictionary )["metadata"] as! NSDictionary
+                let version = meda["bundle-version"] as! String
+                completionHandler(CuValueResponse(value: version, success: true))
+            case.failure(let error):
+                print(error)
+            }
+        }
+    }
 }

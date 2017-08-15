@@ -38,9 +38,28 @@ class PersonalViewController: UIViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont.systemFont(ofSize: 16),                                                                        NSForegroundColorAttributeName: UIColor.white]
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+//        getVersion() 
     }
     
+    func getVersion(){
+        DataModel.getVersionFromServer(){
+           (response: CuValueResponse<String>) -> Void in
+            if response.success{
+            let infoDic = Bundle.main.infoDictionary
+            // 获取App的版本号
+            let appVersion = infoDic?["CFBundleShortVersionString"] as! String
+//            // 获取App的build版本
+//            let appBuildVersion = infoDic?["CFBundleVersion"]
+//            // 获取App的名称
+//            let appName = infoDic?["CFBundleDisplayName"]
+                if response.value!.isNewer(than: appVersion){
+                    showMsg(self, title: "提示", message: "有新版本，请前往官网下载更新！")
+                }else{
+                    showMsg(self, title: "提示", message: "已经是最新版本了！")
+                }
+            }
+        }
+    }
     func setup(){
         tableView.backgroundColor = CuColor.colors.v2_backgroundColor
         self.view.addSubview(tableView)
@@ -117,8 +136,9 @@ extension PersonalViewController: UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 2 && indexPath.row == 0{
-
+        let cell = getCell(tableView, cell: PersonalInfoViewCell.self, indexPath: indexPath);
+        if indexPath.section == 1 && indexPath.row == 1{
+            getVersion()
         }
     }
 }
