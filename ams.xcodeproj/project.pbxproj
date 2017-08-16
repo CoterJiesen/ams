@@ -51,6 +51,7 @@
 		2FD853D31F14D3C100A3C75A /* ZHDropDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD853D01F14D3C100A3C75A /* ZHDropDownMenu.swift */; };
 		2FD853D71F17163800A3C75A /* AllocateDeviceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD853D61F17163800A3C75A /* AllocateDeviceViewCell.swift */; };
 		2FD853DB1F17553200A3C75A /* OnOffButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD853DA1F17553100A3C75A /* OnOffButton.swift */; };
+		2FECEF2D1F43EE2000A9468D /* String_Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FECEF2C1F43EE1F00A9468D /* String_Extention.swift */; };
 		2FF1BA801F00A99E00850D64 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF1BA7F1F00A99E00850D64 /* ScrollView.swift */; };
 		2FF1BA821F022F1800850D64 /* DeviceInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF1BA811F022F1800850D64 /* DeviceInfoViewCell.swift */; };
 		A8437816D6DDEF188B1D0408 /* Pods_amsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78863BBF973DA2C3BB55FFAB /* Pods_amsUITests.framework */; };
@@ -171,6 +172,7 @@
 		2FD853D01F14D3C100A3C75A /* ZHDropDownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZHDropDownMenu.swift; path = Common/ZHDropDownMenu/ZHDropDownMenu.swift; sourceTree = "<group>"; };
 		2FD853D61F17163800A3C75A /* AllocateDeviceViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AllocateDeviceViewCell.swift; path = View/AllocateDeviceViewCell.swift; sourceTree = "<group>"; };
 		2FD853DA1F17553100A3C75A /* OnOffButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnOffButton.swift; path = Common/OnOffButton.swift; sourceTree = "<group>"; };
+		2FECEF2C1F43EE1F00A9468D /* String_Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = String_Extention.swift; path = Common/String_Extention.swift; sourceTree = "<group>"; };
 		2FF1BA7F1F00A99E00850D64 /* ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollView.swift; path = View/ScrollView.swift; sourceTree = "<group>"; };
 		2FF1BA811F022F1800850D64 /* DeviceInfoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceInfoViewCell.swift; path = View/DeviceInfoViewCell.swift; sourceTree = "<group>"; };
 		44D52F1A6F19F205F1690983 /* Pods_ams.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ams.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -301,6 +303,7 @@
 				DC43A0E41EA9D9BD00244285 /* CuStyle.swift */,
 				2F7224741F304F22005F7183 /* UINavigationBar_Extention.swift */,
 				DCECDE531EA8B2F7007DB906 /* UserKeyChain.swift */,
+				2FECEF2C1F43EE1F00A9468D /* String_Extention.swift */,
 				DC43A0E91EA9E5F900244285 /* UITableView_Extension.swift */,
 				DC6D869C1EAE032F007C0D37 /* CuResponse.swift */,
 				DC5D0EB41EAEEA80006A21AB /* Request_Extension.swift */,
@@ -780,6 +783,7 @@
 				2FD853B81F14C82C00A3C75A /* ConsumingDeviceController.swift in Sources */,
 				2F60BDF91F3082DB00634427 /* ConsumingFaultViewController.swift in Sources */,
 				2F9744271F2AEA2200F9597B /* ConsumingDeviceTabController.swift in Sources */,
+				2FECEF2D1F43EE2000A9468D /* String_Extention.swift in Sources */,
 				DC5D0EB71EAEF10C006A21AB /* UserModel.swift in Sources */,
 				2FD264991F347CA200BB7387 /* ConsumingFaultViewCell.swift in Sources */,
 				2F60BDF51F30650300634427 /* OProgressView.swift in Sources */,
