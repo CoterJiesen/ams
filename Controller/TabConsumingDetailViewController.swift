@@ -13,6 +13,7 @@ import PagingMenuController
 import PieCharts
 
 class ConsumingAllocInfoView: UIView{
+    let bview = StarsOverlay()
     var avatarView: UIView = {
         let mview = UIView()
         mview.backgroundColor = UIColor(white: 0.9, alpha: 0.3)
@@ -50,6 +51,7 @@ class ConsumingAllocInfoView: UIView{
     
     
     func setupUI(){
+        self.addSubview(bview)
         self.addSubview(avatarView)
         avatarView.addSubview(numLabel)
         avatarView.addSubview(numTitleLabel)
@@ -57,6 +59,9 @@ class ConsumingAllocInfoView: UIView{
     }
     func setupLayout(){
         self.snp.makeConstraints { (make) in
+            make.top.right.left.bottom.equalTo(self)
+        }
+        self.bview.snp.makeConstraints { (make) in
             make.top.right.left.bottom.equalTo(self)
         }
         self.avatarView.snp.makeConstraints{ (make) -> Void in
@@ -133,6 +138,7 @@ struct PersonConsumingInfo{
 //主视图控制器
 class TabConsumingDetailViewController: UIViewController {
     var titleView = ConsumingAllocInfoView()
+    let bview = StarsOverlay()
     var topview = UIView()
     var chartView =  PieChart()
     var viewController1: MyAllocationViewController!
@@ -194,7 +200,8 @@ class TabConsumingDetailViewController: UIViewController {
 //            make.left.equalTo(self.view)
 //        }
         topview.addSubview(chartView)
-        chartView.backgroundColor = CuColor.colors.v2_ButtonBackgroundColor
+        chartView.addSubview(bview)
+        chartView.backgroundColor = UIColor(patternImage: UIImage(named: "12.jpg")!)// CuColor.colors.v2_ButtonBackgroundColor
         topview.snp.makeConstraints { (make) in
             make.top.equalTo(self.view).offset(64)
             make.left.right.equalTo(self.view)
@@ -205,6 +212,10 @@ class TabConsumingDetailViewController: UIViewController {
             make.width.equalTo(SCREEN_WIDTH)
             make.center.equalTo(topview)
         }
+        self.bview.snp.makeConstraints { (make) in
+            make.top.right.left.bottom.equalTo(self.chartView)
+        }
+        
         pagingMenuController.didMove(toParentViewController: self)
     }
     override func viewWillAppear(_ animated: Bool) {

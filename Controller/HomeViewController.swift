@@ -99,7 +99,7 @@ extension HomeViewController{
 
     func setup(){
 
-        self.sysInfoview.backgroundColor = CuColor.colors.v2_ButtonBackgroundColor
+        self.sysInfoview.backgroundColor = UIColor(patternImage: UIImage(named: "12.jpg")!) //`CuColor.colors.v2_ButtonBackgroundColor
         self.sysInfoview.prog.progress = 40
 //        self.sysInfoview.ac_shadeView(withColorList: [UIColor.red,.blue])
         self.view.addSubview(sysInfoview)

@@ -10,7 +10,7 @@ import UIKit
 import LLCycleScrollView
 
 class SysInfoView: UIView{
-    
+    let bview = StarsOverlay()
     /// 用户名
     var titleAlocaledLabel: UILabel = {
         let label = UILabel()
@@ -98,6 +98,7 @@ class SysInfoView: UIView{
     }
     func setupUI(){
         prog.backgroundColor = .clear
+        self.addSubview(bview)
         self.addSubview(prog)
         self.addSubview(titleTotalLabel)
         self.addSubview(titleAlocaledLabel)
@@ -114,6 +115,9 @@ class SysInfoView: UIView{
             make.top.right.left.bottom.equalTo(self)
         }
         
+        bview.snp.makeConstraints { (make) in
+            make.top.right.left.bottom.equalTo(self)
+        }
         self.titleAlocaledLabel.snp.makeConstraints { (make) in
             make.top.equalTo(40)
             make.left.equalTo(30)

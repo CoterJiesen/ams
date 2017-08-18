@@ -7,6 +7,7 @@
 import UIKit
 
 import SnapKit
+import AVFoundation
 
 protocol scanDelegate{
     //回传条码类型和值
@@ -31,7 +32,7 @@ class ScanViewController: LBXScanViewController,UITextFieldDelegate {
     
     //底部显示的功能项
     var bottomItemsView:UIView?
-    
+   
     //相册
     var btnPhoto:UIButton = UIButton()
     
@@ -47,7 +48,7 @@ class ScanViewController: LBXScanViewController,UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.arrayCodeType = [AVMetadataObjectTypeQRCode,AVMetadataObjectTypeDataMatrixCode,AVMetadataObjectTypeEAN13Code,AVMetadataObjectTypeCode128Code]
         //需要识别后的图像
         setNeedCodeImage(needCodeImg: true)
         
