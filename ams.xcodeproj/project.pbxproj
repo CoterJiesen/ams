@@ -22,7 +22,7 @@
 		2F60BDFA1F3082DB00634427 /* ConsumingSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F60BDF71F3082DB00634427 /* ConsumingSuccessViewController.swift */; };
 		2F60BDFB1F3082DB00634427 /* ConsumingResultTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F60BDF81F3082DB00634427 /* ConsumingResultTabViewController.swift */; };
 		2F69218B1F459FC8008DC4AD /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69218A1F459FC8008DC4AD /* StarsView.swift */; };
-		2F69218D1F46BE47008DC4AD /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F69218C1F46BE47008DC4AD /* 12.jpg */; };
+		2F69218F1F46C9D8008DC4AD /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F69218E1F46C9D8008DC4AD /* 12.jpg */; };
 		2F72245D1F2B241B005F7183 /* ConsumingHistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F72245C1F2B241B005F7183 /* ConsumingHistoryViewCell.swift */; };
 		2F72245F1F2B2A2E005F7183 /* ConsumingHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F72245E1F2B2A2E005F7183 /* ConsumingHistoryViewController.swift */; };
 		2F7224631F2EDBF9005F7183 /* ReportFaultDeviceTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7224621F2EDBF9005F7183 /* ReportFaultDeviceTabViewController.swift */; };
@@ -145,7 +145,7 @@
 		2F60BDF71F3082DB00634427 /* ConsumingSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsumingSuccessViewController.swift; path = Controller/ConsumingSuccessViewController.swift; sourceTree = "<group>"; };
 		2F60BDF81F3082DB00634427 /* ConsumingResultTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsumingResultTabViewController.swift; path = Controller/ConsumingResultTabViewController.swift; sourceTree = "<group>"; };
 		2F69218A1F459FC8008DC4AD /* StarsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StarsView.swift; path = View/StarsView.swift; sourceTree = "<group>"; };
-		2F69218C1F46BE47008DC4AD /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpg; sourceTree = "<group>"; };
+		2F69218E1F46C9D8008DC4AD /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 12.jpg; path = Resources/12.jpg; sourceTree = "<group>"; };
 		2F72245C1F2B241B005F7183 /* ConsumingHistoryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsumingHistoryViewCell.swift; path = View/ConsumingHistoryViewCell.swift; sourceTree = "<group>"; };
 		2F72245E1F2B2A2E005F7183 /* ConsumingHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsumingHistoryViewController.swift; path = Controller/ConsumingHistoryViewController.swift; sourceTree = "<group>"; };
 		2F7224621F2EDBF9005F7183 /* ReportFaultDeviceTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReportFaultDeviceTabViewController.swift; path = Controller/ReportFaultDeviceTabViewController.swift; sourceTree = "<group>"; };
@@ -442,7 +442,7 @@
 		DCECDE441EA8A5F3007DB906 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2F69218C1F46BE47008DC4AD /* 12.jpg */,
+				2F69218E1F46C9D8008DC4AD /* 12.jpg */,
 				0A33474E1F36173700580146 /* 32.jpg */,
 				2FCA8C241F30DE0A004FE567 /* Media.xcassets */,
 				DC286C9D1E9DFB9900792209 /* Assets.xcassets */,
@@ -583,7 +583,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F69218D1F46BE47008DC4AD /* 12.jpg in Resources */,
+				2F69218F1F46C9D8008DC4AD /* 12.jpg in Resources */,
 				DCECDE4B1EA8A609007DB906 /* CSS in Resources */,
 				0A33474F1F36173700580146 /* 32.jpg in Resources */,
 				2F4E86851ED584A400C5BC3F /* amsUITests in Resources */,
