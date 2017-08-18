@@ -540,7 +540,7 @@
 				TargetAttributes = {
 					DC286C8F1E9DFB9900792209 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = ENAPWL5GDW;
+						DevelopmentTeam = S6PV69R44A;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -984,11 +984,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = ENAPWL5GDW;
+				DEVELOPMENT_TEAM = S6PV69R44A;
 				INFOPLIST_FILE = ams/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zznode.com.ams.hn1;
+				PRODUCT_BUNDLE_IDENTIFIER = zznode.com.ams.hn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1009,11 +1009,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = ENAPWL5GDW;
+				DEVELOPMENT_TEAM = S6PV69R44A;
 				INFOPLIST_FILE = ams/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zznode.com.ams.hn1;
+				PRODUCT_BUNDLE_IDENTIFIER = zznode.com.ams.hn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ams-Bridging-Header.h";

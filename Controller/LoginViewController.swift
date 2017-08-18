@@ -54,9 +54,9 @@ class LoginViewController: UIViewController,UITextFieldDelegate ,UIViewControlle
         UIView.animate(withDuration: 2, animations: { () -> Void in
             self.backgroundImageView.alpha=1;
         })
-        UIView.animate(withDuration: 20, animations: { () -> Void in
-            self.backgroundImageView.frame = CGRect(x: -1*( 1000 - SCREEN_WIDTH )/2, y: 0, width: SCREEN_HEIGHT+500, height: SCREEN_HEIGHT+500);
-        })
+//        UIView.animate(withDuration: 20, animations: { () -> Void in
+//            self.backgroundImageView.frame = CGRect(x: -1*( 1000 - SCREEN_WIDTH )/2, y: 0, width: SCREEN_HEIGHT+500, height: SCREEN_HEIGHT+500);
+//        })
     }
     // MARK: UIViewControllerTransitioningDelegate
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
@@ -215,29 +215,12 @@ extension LoginViewController {
     func setupView(){
 
         self.view.backgroundColor = UIColor.black
-        backgroundImageView.image = UIImage(named: "32.jpg")
+        backgroundImageView.image = UIImage(named: "login_bg.png")
         backgroundImageView.frame = self.view.frame
         backgroundImageView.contentMode = .scaleToFill
         backgroundImageView.alpha = 0
         frostedView.frame = self.view.frame
-        
-//        let vibrancy = UIVibrancyEffect(blurEffect: UIBlurEffect(style: .dark))
-//        let vibrancyView = UIVisualEffectView(effect: vibrancy)
-//        vibrancyView.isUserInteractionEnabled = true
-//        vibrancyView.frame = self.frostedView.frame
-//        self.frostedView.contentView.addSubview(vibrancyView)
-        
-////        //毛玻璃
-//        var blurEffect: UIVisualEffect
-//        blurEffect = UIBlurEffect.init(style:.dark)
-//        let visualEffectView = UIVisualEffectView(effect: blurEffect)
-//        UIView.beginAnimations(nil, context: nil)
-//        UIView.setAnimationDuration(1.5)
-//        visualEffectView.alpha = 0.84
-//        UIView.commitAnimations()
-//        visualEffectView.frame = self.view.bounds
-//        self.view!.addSubview(visualEffectView)
-//        
+
 
         //登录框背景
 //        formView.backgroundColor = UIColor.black
