@@ -33,7 +33,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate ,UIViewControlle
     let titleSummaryLabel = UILabel()
     let forgetPasswordLabel = UILabel()
     let footLabel = UILabel()
-    let formViewHeight = 130            //登录框高度
+    let formViewHeight = 110            //登录框高度
     let txtFieldHeight = 48             //输入框的高度
     
     var topConstraint: Constraint? //登录框距顶部距离约束
@@ -215,7 +215,9 @@ extension LoginViewController {
     func setupView(){
 
         self.view.backgroundColor = UIColor.black
-        backgroundImageView.image = UIImage(named: "login_bg.png")
+//        backgroundImageView.image = UIImage(named: "login_bg.png")
+        let colors = [UIColor.init(colorLiteralRed: 178.0/255.0, green: 226.0/255.0, blue: 248.0/255.0, alpha: 1.0).cgColor, UIColor.init(colorLiteralRed: 232.0/255.0, green: 244.0/255.0, blue: 193.0/255.0, alpha: 1.0).cgColor]
+        backgroundImageView.layer.initCALayer(self.view.bounds, colors, [CGPoint(x: 0, y: 0), CGPoint(x: 1, y: 1)])
         backgroundImageView.frame = self.view.frame
         backgroundImageView.contentMode = .scaleToFill
         backgroundImageView.alpha = 0

@@ -157,7 +157,7 @@ open class LBXScanViewController: UIViewController, UIImagePickerControllerDeleg
         
         picker.delegate = self;
         
-        picker.allowsEditing = false
+        picker.allowsEditing = true
 
         present(picker, animated: true, completion: nil)
     }

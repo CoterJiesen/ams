@@ -53,7 +53,7 @@ class PersonalInfoView: UIView{
     
     func setupUI(){
         self.backgroundColor = UIColor(patternImage: UIImage(named: "32.jpg")!)
-        self.addSubview(vibrancyView)
+        self.addSubview(vibrancyView)	
         self.addSubview(avatarImageView)
         self.addSubview(userNameLabel)
         self.addSubview(identityLable)

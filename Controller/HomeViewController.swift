@@ -10,9 +10,9 @@ import UIKit
 
 
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController ,UINavigationControllerDelegate{
 
-    var sysInfoview = SysInfoView()
+    var sysInfoview :SysInfoView!
 //    var scrollView = ScrollView()
     var menuView = MenuView()
 
@@ -29,14 +29,9 @@ class HomeViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title="中国移动资产管理系统";
-        self.navigationController?.navigationBar.barTintColor = CuColor.colors.v2_ButtonBackgroundColor
-        // 设置导航栏为透明的白色
-//        self.navigationController?.navigationBar.barTintColor = UIColor.black
-        self.navigationController?.navigationBar.hideBottomHairLine()
-        self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont.systemFont(ofSize: 16),
-                                                                        NSForegroundColorAttributeName: UIColor.white]
-   
+//        self.navigationItem.title="中国移动资产管理系统";
+
+        self.navigationController?.delegate = self
         self.setup()
         getUsedInfo() 
         //监听程序即将进入前台运行、进入后台休眠 事 件
@@ -44,8 +39,11 @@ class HomeViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(HomeViewController.applicationDidEnterBackground), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
     }
 
-
-
+    //hidden navigation
+    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        let isShowHomePage = viewController.isKind(of: HomeViewController.self)
+        navigationController.setNavigationBarHidden(isShowHomePage, animated: true)
+    }
     static var lastLeaveTime = Date()
     func applicationWillEnterForeground(){
         //计算上次离开的时间与当前时间差
@@ -95,13 +93,9 @@ extension HomeViewController{
 
 }
 extension HomeViewController{
-    //颜色渐变
-
     func setup(){
-
-        self.sysInfoview.backgroundColor = UIColor(patternImage: UIImage(named: "12.jpg")!) //`CuColor.colors.v2_ButtonBackgroundColor
+        self.sysInfoview = SysInfoView(frame: CGRect(x:0, y:0, width:SCREEN_WIDTH, height: (SCREEN_HEIGHT - 44 - 49) / 3))
         self.sysInfoview.prog.progress = 40
-//        self.sysInfoview.ac_shadeView(withColorList: [UIColor.red,.blue])
         self.view.addSubview(sysInfoview)
 //        self.view.addSubview(scrollView)
         self.view.addSubview(menuView)
@@ -109,7 +103,6 @@ extension HomeViewController{
         self.thmemChangedHandler = {[weak self] (style) -> Void in
             self?.view.backgroundColor = CuColor.colors.v2_backgroundColor
         }
-//        self.sysInfoview.ac_shadeView(withColorList: [UIColor.red,.blue])
     }
     func setupLayout(){
 //        scrollView.snp.makeConstraints { (make) in
@@ -118,8 +111,8 @@ extension HomeViewController{
 //            make.left.right.equalTo(self.view)
 //        }
         sysInfoview.snp.makeConstraints { (make) in
-            make.top.equalTo(64)
-            make.height.equalTo((SCREEN_HEIGHT - 64 - 49 - 18) / 3 + 12)
+            make.top.equalTo(20)
+            make.height.equalTo((SCREEN_HEIGHT - 44 - 49) / 3)
             make.left.right.equalTo(self.view)
         }
         menuView.snp.makeConstraints { (make) in

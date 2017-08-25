@@ -3,12 +3,7 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "static DataModel.(alloctionDevice(username : String, sns : [String], completionHandler : (CuValueResponse&lt;allocStatus&gt;) -&gt; ()) -&gt; ()).(closure #1):DataModel.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "mjson[&quot;fail&quot;][0].string">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "LLCycleScrollView.collectionView(UICollectionView, numberOfItemsInSection : Int) -&gt; Int:LLCycleScrollView.swift">
       </ContextState>
       <ContextState
          contextName = "HomeViewController.tableView(UITableView, didSelectRowAt : IndexPath) -&gt; ():HomeViewController.swift">
@@ -27,7 +22,12 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "LLCycleScrollView.collectionView(UICollectionView, numberOfItemsInSection : Int) -&gt; Int:LLCycleScrollView.swift">
+         contextName = "static DataModel.(alloctionDevice(username : String, sns : [String], completionHandler : (CuValueResponse&lt;allocStatus&gt;) -&gt; ()) -&gt; ()).(closure #1):DataModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mjson[&quot;fail&quot;][0].string">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "PersonInfoListView.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:MenuPersonInfoViewCell.swift">
@@ -52,6 +52,14 @@
             </PersistentString>
             <PersistentString
                value = "mjson[&quot;staffInfos&quot;][0][&quot;staffname&quot;].string">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "specialized static LBXScanWrapper.recognizeQRImage(image : UIImage) -&gt; [LBXScanResult]:LBXScanWrapper.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "img">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

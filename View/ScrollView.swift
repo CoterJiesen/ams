@@ -10,7 +10,7 @@ import UIKit
 import LLCycleScrollView
 
 class SysInfoView: UIView{
-    let bview = StarsOverlay()
+    let bview = UIView()
     /// 用户名
     var titleAlocaledLabel: UILabel = {
         let label = UILabel()
@@ -83,7 +83,8 @@ class SysInfoView: UIView{
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
-        
+        let colors = [UIColor.init(colorLiteralRed: 18.0/255.0, green: 150.0/255.0, blue: 219.0/255.0, alpha: 1.0).cgColor, UIColor.init(colorLiteralRed: 178.0/255.0, green: 226.0/255.0, blue: 248.0/255.0, alpha: 1.0).cgColor]
+        bview.layer.initCALayer(frame, colors, [CGPoint(x: 0, y: 0), CGPoint(x: 1, y: 1)])
         detailButton.addTarget(self, action: #selector(clickCheckDetail), for: .touchUpInside)
     }
     
@@ -97,6 +98,7 @@ class SysInfoView: UIView{
         CuClient.sharedInstance.centerViewController?.navigationController?.pushViewController(vc, animated: true)
     }
     func setupUI(){
+
         prog.backgroundColor = .clear
         self.addSubview(bview)
         self.addSubview(prog)
